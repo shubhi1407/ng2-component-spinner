@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
     "module": "commonjs",
     "target": "ES6",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowUnusedLabels": false,
-    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
     "sourceMap": true,
     "declaration": true,
     "outDir": "./dist",

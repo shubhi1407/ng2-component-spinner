@@ -4,9 +4,9 @@ import { Component , Input  } from '@angular/core';
 
 @Component({
   selector: 'spinner-component',
-    template : `<div *ngIf="spinnerShow" class="spinner-background"></div><div *ngIf="spinnerShow" class="spinner position-center"></div>`,
+    template : `<div *ngIf="spinnerShow" class="sc-background"></div><div *ngIf="spinnerShow" class="sc-default-spinner sc-center"></div>`,
     styles: [`
-        .spinner {
+        .sc-default-spinner {
             width: 20px;
             height: 20px;
             background-color: orange;
@@ -32,7 +32,7 @@ import { Component , Input  } from '@angular/core';
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
       }
 
-    .spinner-background{
+    .sc-background{
         content : "";
         z-index: 1;
         position: absolute;
@@ -42,7 +42,7 @@ import { Component , Input  } from '@angular/core';
         bottom: 0;
         background-color: rgba(255,255,255,0.8);
     }
-    .position-center{
+    .sc-center{
         top: 0;
         bottom: 0;
         margin: auto;
