@@ -22,7 +22,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
+// Import library
 import { SpinnerComponentModule } from 'ng2-component-spinner';
 
 @NgModule({
@@ -42,7 +42,6 @@ export class AppModule { }
 Once this library is imported, you can use it in your Angular application:
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
 <h1>
   {{title}}
 </h1>
