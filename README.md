@@ -40,12 +40,14 @@ export class AppModule { }
 ```
 
 Once this library is imported, you can use it in your Angular application:
-
+For this component to work, that component has to be wrapped in a relative positioned div.
 ```xml
+<div style="position:relative">
 <h1>
   {{title}}
 </h1>
 <spinner-component [spinnerShow]="<booleanVariable>"></spinner-component>
+</div>
 ```
 
 ## Development
