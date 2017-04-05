@@ -31,6 +31,7 @@ import { Component , Input  } from '@angular/core';
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
       }
+    }
 
     .sc-background{
         content : "";
