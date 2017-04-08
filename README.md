@@ -7,13 +7,35 @@ To install this library, run:
 ```bash
 $ npm install ng2-component-spinner --save
 ```
+## [View Demo](https://shubhi1407.github.io/ng2-component-spinner/)
 
 ## Usage
 
 ```bash
 $ npm install ng2-component-spinner
 ```
-
+Configure your System.config
+```javascript
+System.config({
+  defaultJSExtensions: true,
+  map: {
+    "angular2": "node_modules/angular2",
+    "rxjs": "node_modules/rxjs",
+    ...
+    "ng2-component-spinner": "node_modules/ng2-component-spinner/dist"
+  },
+  packages: {        
+    'app': {
+      main : './main.ts',
+      defaultJSExtensions : 'ts'
+    },
+    'ng2-component-spinner' : {
+      defaultExtension : 'js',
+      main : 'index.js'
+    }
+  }
+});
+```
 and then from your Angular `AppModule`:
 
 ```typescript
@@ -22,7 +44,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import library
+// Import Module
 import { SpinnerComponentModule } from 'ng2-component-spinner';
 
 @NgModule({
@@ -31,6 +53,7 @@ import { SpinnerComponentModule } from 'ng2-component-spinner';
   ],
   imports: [
     BrowserModule,    
+    // Add module to imports
     SpinnerComponentModule
   ],
   providers: [],
@@ -40,13 +63,13 @@ export class AppModule { }
 ```
 
 Once this library is imported, you can use it in your Angular application:
-For this component to work, that component has to be wrapped in a relative positioned div.
+NOTE: For this component to work, your template *must* be wrapped in a relative positioned root element.
 ```xml
 <div style="position:relative">
-<h1>
-  {{title}}
-</h1>
-<spinner-component [spinnerShow]="<booleanVariable>"></spinner-component>
+    <h1>
+        {{title}}
+    </h1>
+    <spinner-component [spinnerShow]="<booleanVariable>"></spinner-component>
 </div>
 ```
 

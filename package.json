@@ -1,6 +1,7 @@
 {
   "name": "ng2-component-spinner",
-  "version": "0.1.5",
+  "version": "0.1.6",
+"description": "A fairly simple and customizable spinner for your angular 2/4 component.",
   "scripts": {
     "build": "ngc -p tsconfig.json",
     "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
@@ -17,7 +18,7 @@
     "email": "shubhangi140793@gmail.com"
   },
   "keywords": [
-    "angular"
+    "angular", "angular2", "angular4", "spinner", "typescript", "component-loader", "component-spinner"
   ],
   "license": "MIT",
   "bugs": {
