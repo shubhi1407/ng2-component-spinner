@@ -9,6 +9,7 @@
      // 'npm:': 'node_modules/',
         'npm:': 'https://unpkg.com/'
     },
+       baseURL: '/ng2-component-spinner/',
     // map tells the System loader where to look for things
     map: {
       // our app is within the app folder
@@ -27,6 +28,7 @@
       'ng2-component-spinner-lib' : 'npm:ng2-component-spinner/dist',
       'prismjs': 'npm:prismjs',
       'angular-prism' : 'npm:angular-prism/dist',
+       
       // other libraries
       'rxjs': 'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
