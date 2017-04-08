@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3 light-border">
+       <div ><table-component [show]="showLoader">
+           </table-component></div><button type="button" (click)=fetch() class="btn btn-primary pull-right">Fetch</button>
+    </div>
+    </div>
+<hr class="style1">
+<div class="row">
+    <div class="col-xs-12 col-md-4 light-border min-484">
+        <h3>Main Component</h3>
+            <prism-block [code]="appCode" [language]="'typescript'"></prism-block> 
+        </div>
+        <div class="col-xs-12 col-md-4 light-border min-484">  
+            <h3>Table Component</h3>
+            <prism-block [code]="tableCode" [language]="'typescript'"></prism-block> 
+        </div>
+        <div class="col-xs-12 col-md-4 light-border min-484">  
+            <h3>Template</h3>
+            <prism-block [code]="tableHtml" [language]="'xml'"></prism-block> 
+        </div>   
+      
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-6 light-border">hi </div>
+    <div class="col-xs-12 col-md-6 light-border">hi </div>
+</div>

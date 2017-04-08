@@ -1,0 +1,15 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+h1 {
+    font-size:50px;
+}
+.light-border {
+/*    border:1px solid #333;*/
+}
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+}
+.min-484 pre{
+    min-height: 484px;
+}
