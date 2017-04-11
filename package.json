@@ -1,6 +1,6 @@
 {
   "name": "ng2-component-spinner",
-  "version": "0.1.7",
+  "version": "0.1.9",
 "description": "A fairly simple and customizable spinner for your angular 2/4 component.",
   "scripts": {
     "build": "ngc -p tsconfig.json",

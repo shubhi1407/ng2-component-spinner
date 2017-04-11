@@ -46,13 +46,13 @@ import { Component, Input  } from '@angular/core';
         background-color: rgba(255,255,255,0.8);
     }
     .sc-center{
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        position: absolute;
-        left: 0;
-        right: 0;
-        z-index:2;
+      top: 50%;
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      transform: translatey(-50%);
     }
 `]
 })
