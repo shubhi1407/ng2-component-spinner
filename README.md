@@ -79,7 +79,7 @@ Use a custom CSS spinner like this
       <div class="double-bounce1"></div>
       <div class="double-bounce2"></div>
     </div>
-    </spinner-component>
+</spinner-component>
 ```
 ## Development
 
