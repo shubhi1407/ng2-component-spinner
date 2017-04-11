@@ -44,10 +44,11 @@ import { Component, Input } from '@angular/core';
     -webkit-transform: scale(1.0);
   }
 }
-`],
+`]
 })
 export class Table1Wrapper {
     @Input() show1: boolean;
+    constructor() {
 
-
+    }
 }
