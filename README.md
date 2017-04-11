@@ -72,7 +72,15 @@ NOTE: For this component to work, your template *must* be wrapped in a relative 
     <spinner-component [spinnerShow]="<booleanVariable>"></spinner-component>
 </div>
 ```
-
+Use a custom CSS spinner like this
+```xml
+<spinner-component [spinnerShow]="show">
+    <div class="spinner-2">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+    </spinner-component>
+```
 ## Development
 
 To generate all `*.js`, `*.js.map` and `*.d.ts` files:
