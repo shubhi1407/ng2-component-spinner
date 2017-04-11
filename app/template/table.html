@@ -1,5 +1,7 @@
 <div style="position : relative">
-    <spinner-component [spinnerShow]="show"></spinner-component>
+    <spinner-component [spinnerShow]="show">
+        <ng-content></ng-content>
+    </spinner-component>
     <table class="table table-striped">
         <thead>
             <tr>
