@@ -47,7 +47,7 @@ import { Component, Input } from '@angular/core';
 `],
 })
 export class Table1Wrapper {
-    @Input() show: boolean;
+    @Input() show1: boolean;
 
 
 }
