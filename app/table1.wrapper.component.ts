@@ -51,7 +51,3 @@ export class Table1Wrapper {
 
 
 }
-
-
-
-}
