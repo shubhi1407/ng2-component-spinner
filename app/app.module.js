@@ -9,6 +9,7 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var table_wrapper_component_1 = require("./table.wrapper.component");
+var table1_wrapper_component_1 = require("./table1.wrapper.component");
 var ng2_component_spinner_1 = require("ng2-component-spinner");
 require("prismjs/prism");
 require("prismjs/components/prism-typescript");
@@ -21,7 +22,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, ng2_component_spinner_1.SpinnerComponentModule],
-        declarations: [app_component_1.AppComponent, table_wrapper_component_1.TableWrapper, angular_prism_1.PrismComponent],
+        declarations: [app_component_1.AppComponent, table_wrapper_component_1.TableWrapper, angular_prism_1.PrismComponent, table1_wrapper_component_1.Table1Wrapper],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

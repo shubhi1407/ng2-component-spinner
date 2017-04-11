@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
     styles: []
 })
 export class Table1Wrapper {
-    @Input() show1: boolean;
+    @Input() show: boolean;
     constructor() {
 
     }

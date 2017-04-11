@@ -164,9 +164,13 @@ export class AppComponent {
     fetch(): void {
         this.showLoader = true;
 
-        //  setTimeout(()=>{this.showLoader=false},2000);
+        setTimeout(() => { this.showLoader = false }, 2000);
     }
     fetchone(): void {
         this.showLoader1 = true;
+        setTimeout(() => { this.showLoader1 = false }, 2000);
+    }
+}
+
     }
 }
