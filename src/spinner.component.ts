@@ -5,7 +5,7 @@ import { Component, Input  } from '@angular/core';
 @Component({
     selector: 'spinner-component',
     template: `<div *ngIf="spinnerShow" class="sc-background"></div>
-  <div *ngIf="spinnerShow" [ngClass]="{'spinner' : ref.children.length == 0 }"  class="sc-center">
+  <div *ngIf="spinnerShow" [ngClass]="{'sc-default-spinner' : ref.children.length == 0 }"  class="sc-center">
   <div #ref><ng-content></ng-content></div></div>`,
     styles: [`
         .sc-default-spinner {
