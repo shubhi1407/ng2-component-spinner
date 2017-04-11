@@ -1,10 +1,12 @@
-import { Component , Input  } from '@angular/core';
+import { Component, Input  } from '@angular/core';
 
 
 
 @Component({
-  selector: 'spinner-component',
-    template : `<div *ngIf="spinnerShow" class="sc-background"></div><div *ngIf="spinnerShow" class="sc-default-spinner sc-center"></div>`,
+    selector: 'spinner-component',
+    template: `<div *ngIf="spinnerShow" class="sc-background"></div>
+  <div *ngIf="spinnerShow" [ngClass]="{'spinner' : ref.children.length == 0 }"  class="sc-center">
+  <div #ref><ng-content></ng-content></div></div>`,
     styles: [`
         .sc-default-spinner {
             width: 20px;
@@ -21,13 +23,13 @@ import { Component , Input  } from '@angular/core';
     }
 
     @keyframes sk-rotateplane {
-      0% { 
+      0% {
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
-      } 50% { 
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+      } 50% {
         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
-      } 100% { 
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
       }
