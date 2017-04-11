@@ -11,5 +11,6 @@ hr.style1{
 	border-top: 1px solid #8c8b8b;
 }
 .min-484 pre{
-    min-height: 484px;
+    height: 484px;
+    overflow-y: scroll;
 }
